@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-octankecommercewebv1-dev-102613-authRole",
+      "UnauthRoleArn": "arn:aws:iam::572285620711:role/amplify-octankecommercewebv1-dev-102613-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::572285620711:role/amplify-octankecommercewebv1-dev-102613-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-octankecommercewebv1-dev-102613-deployment",
+      "UnauthRoleName": "amplify-octankecommercewebv1-dev-102613-unauthRole",
+      "StackName": "amplify-octankecommercewebv1-dev-102613",
+      "StackId": "arn:aws:cloudformation:ap-south-1:572285620711:stack/amplify-octankecommercewebv1-dev-102613/d37b0820-e916-11eb-bdc2-0aea31683dd0",
+      "AmplifyAppId": "d2lbk96ow5uztz"
+    },
+    "categories": {
+      "auth": {
+        "octankecommercewebv198205548": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<div style="padding: 13px;">
+
+    
+        <!-- <div>Hello, {{authObject}}</div> -->
+        <!-- <div>Token is : {{idToken}}</div> -->
+   
+    <mat-spinner *ngIf="products.length === 0"></mat-spinner>
+
+    <mat-card *ngFor="let product of products" style="margin-top:11px; margin-bottom: 20px;">
+        <mat-card-header>
+            <mat-card-title class="mat-card-content" style="font-size:x-large;" >{{product.name}}</mat-card-title>
+            
+        </mat-card-header>
+        <mat-card-content>
+           
+            <img style="height:100%; width: 100%;" src="{{ product.imageUrl }}" />
+            <p>
+                {{product.description}}
+            </p>
+            <mat-card-subtitle style="color: lightcoral; font-size:larger;">INR {{product.price}}</mat-card-subtitle>
+        </mat-card-content>
+        <mat-card-actions>
+      <button *ngIf="isSignedIn === true && selectedProductId !== product.id" (click)="buyProduct(product.id)" mat-raised-button color="primary">Buy product</button>
+      <div *ngIf="selectedProductId === product.id">
+        <button *ngIf="isSignedIn === true" (click)="buyProduct(product.id)" mat-raised-button color="primary">Buy Again</button>
+        
+        <mat-toolbar style="margin-top:8px; background-color: lightgreen;">
+            <mat-icon class="material-icons-outlined">task_alt</mat-icon>
+        <div style="margin-left: 10px; font-size: medium;">
+            {{msg1}}
+          </div>  
+        </mat-toolbar>
+        
+    </div>
+      
+      <button mat-raised-button color="accent" *ngIf="isSignedIn !== true" class="" routerLink="/login" aria-label="Sign In">
+       Sign In to Buy
+      </button>
+      
+    </mat-card-actions>
+    </mat-card>
+</div>

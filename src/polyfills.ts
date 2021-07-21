@@ -63,3 +63,8 @@ import 'zone.js';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+//For Angular 6+ Support 
+ (window as any).global = window;
+ (window as any).process = {
+   env: { DEBUG: undefined },
+ };

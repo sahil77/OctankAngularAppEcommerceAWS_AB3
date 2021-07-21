@@ -1,0 +1,18 @@
+<!-- <amplify-authenticator>
+    <div>
+      Restaurants App
+      <amplify-sign-out></amplify-sign-out>
+    </div>
+   
+  </amplify-authenticator> -->
+
+
+  <amplify-authenticator *ngIf="authState !== 'signedin'"></amplify-authenticator>
+
+  <div *ngIf="authState === 'signedin' && user" class="App">
+      <!-- <amplify-sign-out></amplify-sign-out> -->
+      <!-- <div>Hello, {{user.username}}</div>
+      <div>Hello, {{user.signInUserSession.idToken.jwtToken}}</div>
+      <div>Token from backend - {{jwtAccessToken}}</div> -->
+     
+  </div>

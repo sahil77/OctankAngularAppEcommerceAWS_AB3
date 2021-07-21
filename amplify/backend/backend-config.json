@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "octankecommercewebv198205548": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
